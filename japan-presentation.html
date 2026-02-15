@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Understanding Japan – Elements of Intercultural Communication</title>
+
+    <!-- Reveal.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/night.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ═══════ THEME OVERRIDES ═══════ */
+      :root {
+        --r-background-color: #1a1a2e;
+        --r-main-font: "Inter", "Noto Sans JP", Helvetica, sans-serif;
+        --r-main-font-size: 22px;
+        --r-main-color: #fff;
+        --r-heading-font: "Inter", "Noto Sans JP", Helvetica, sans-serif;
+        --r-heading-color: #c41e3a;
+        --r-heading-letter-spacing: 0.02em;
+        --r-heading-text-transform: none;
+        --r-heading-line-height: 1.2;
+        --r-link-color: #c41e3a;
+        --r-link-color-hover: #e8dcc4;
+        --r-selection-background-color: rgba(196, 30, 58, 0.45);
+        --r-selection-color: #fff;
+      }
+      .reveal {
+        font-family: var(--r-main-font);
+      }
+
+      /* ═══════ HEADINGS ═══════ */
+      .reveal h1,
+      .reveal h2,
+      .reveal h3,
+      .reveal h4 {
+        font-family: var(--r-main-font);
+        color: #c41e3a;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+        margin-bottom: 0.3em;
+      }
+      .reveal h2 {
+        font-size: 1.5em;
+        border-bottom: 2px solid rgba(196, 30, 58, 0.4);
+        padding-bottom: 0.18em;
+        margin-bottom: 0.35em;
+      }
+      .reveal h3 {
+        font-size: 0.95em;
+        color: #e8dcc4;
+        margin-top: 0.4em;
+        margin-bottom: 0.15em;
+      }
+
+      /* ═══════ TEXT ═══════ */
+      .reveal em {
+        color: #e8dcc4;
+        font-style: italic;
+      }
+      .reveal strong {
+        color: #e8dcc4;
+        font-weight: 600;
+      }
+      .reveal p {
+        line-height: 1.4;
+        margin: 0.2em 0;
+      }
+      .reveal ul,
+      .reveal ol {
+        display: block;
+        text-align: left;
+        margin: 0 0 0 1.1em;
+        padding: 0;
+      }
+      .reveal li {
+        font-size: 0.85em;
+        line-height: 1.4;
+        margin-bottom: 0.18em;
+      }
+      .reveal li::marker {
+        color: #e8dcc4;
+      }
+
+      /* ═══════ IMAGES (global reset) ═══════ */
+      .reveal section img {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+        margin: 0;
+      }
+
+      /* ═══════ TWO-COLUMN ROW LAYOUT ═══════ */
+      .row {
+        display: flex !important;
+        align-items: center;
+        gap: 1.6em;
+        width: 100%;
+        text-align: left;
+      }
+      .row .col-text {
+        flex: 1 1 55%;
+        min-width: 0;
+      }
+      .row .col-img {
+        flex: 0 0 38%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .row .col-img img {
+        max-width: 100%;
+        max-height: 320px;
+        object-fit: cover;
+      }
+      .row .col-img.wide {
+        flex: 0 0 46%;
+      }
+
+      /* ═══════ SPECIAL BLOCKS ═══════ */
+      .practice-box {
+        background: rgba(196, 30, 58, 0.14);
+        border-left: 4px solid #c41e3a;
+        padding: 0.35em 0.8em;
+        margin: 0.45em 0;
+        border-radius: 0 6px 6px 0;
+        font-size: 0.85em;
+        text-align: left;
+      }
+      .contrast-box {
+        background: rgba(232, 220, 196, 0.09);
+        border: 1px solid rgba(232, 220, 196, 0.3);
+        padding: 0.35em 0.8em;
+        margin: 0.45em 0;
+        border-radius: 6px;
+        font-size: 0.85em;
+        text-align: left;
+      }
+
+      /* ═══════ DIVIDER ═══════ */
+      .divider {
+        border: none;
+        border-top: 1px solid rgba(232, 220, 196, 0.25);
+        margin: 0.3em 0;
+        width: 80%;
+      }
+
+      /* ═══════ KANJI ═══════ */
+      .kanji {
+        font-family: "Noto Serif JP", serif;
+        color: #c41e3a;
+      }
+      .kanji-watermark {
+        font-family: "Noto Serif JP", serif;
+        font-size: 9em;
+        font-weight: 300;
+        color: rgba(196, 30, 58, 0.07);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 0;
+        line-height: 1;
+      }
+
+      /* ═══════ TITLE SLIDE ═══════ */
+      .title-slide {
+        text-align: center !important;
+      }
+      .title-slide h1 {
+        font-size: 2.8em;
+        text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7);
+        margin-bottom: 0.1em;
+        border-bottom: none;
+        padding-bottom: 0;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .title-slide h3 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.05em;
+        margin-bottom: 0.7em;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      }
+      .title-slide .meta {
+        border-top: 2px solid rgba(232, 220, 196, 0.35);
+        padding-top: 0.6em;
+        margin-top: 0.4em;
+      }
+      .title-slide .meta p {
+        color: #e8dcc4;
+        font-size: 0.52em;
+        margin: 0.18em 0;
+        font-weight: 300;
+      }
+      .title-slide .meta p.course {
+        font-weight: 500;
+        font-size: 0.58em;
+      }
+
+      /* ═══════ THANK-YOU SLIDE ═══════ */
+      .thankyou-slide {
+        text-align: center !important;
+      }
+      .thankyou-slide h1 {
+        font-family: "Noto Serif JP", serif;
+        font-size: 2.3em;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0.15em;
+      }
+      .thankyou-slide h3 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 0.95em;
+      }
+      .thankyou-slide p {
+        color: #e8dcc4;
+        font-size: 0.68em;
+      }
+
+      /* ═══════ UTILITIES ═══════ */
+      .small {
+        font-size: 0.7em;
+      }
+      .cream {
+        color: #e8dcc4;
+      }
+      .red {
+        color: #c41e3a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 1 — TITLE
+     ════════════════════════════════════════════════════════════ -->
+        <section
+          class="title-slide"
+          data-background-image="https://pplx-res.cloudinary.com/image/upload/v1771169759/pplx_search_images/dd5a636aa597d26d2dab9543511fb6da749ead9d.jpg"
+          data-background-opacity="0.3"
+        >
+          <h1>Understanding Japan</h1>
+          <h3>Elements of Intercultural Communication</h3>
+          <div class="meta">
+            <p class="course">
+              Elements of Intercultural Communications &bull; COM263
+            </p>
+            <p>Supervisor: Ms.&nbsp;Ellie</p>
+            <p>
+              Presented by: Maxmudov&nbsp;V, Karimov&nbsp;O, Shomirzayev&nbsp;U,
+              Abdullayev&nbsp;M
+            </p>
+            <p>February 15, 2026</p>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 2 — WHY JAPAN?
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <h2>Why Japan? The Perfect Case Study</h2>
+          <div class="row">
+            <div class="col-text">
+              <ul>
+                <li>
+                  Japan exemplifies <strong>high-context communication</strong>
+                </li>
+                <li>
+                  One of the world's most
+                  <strong>collectivist societies</strong>
+                </li>
+                <li>
+                  Perfect example of
+                  <strong>tradition meeting modernity</strong>
+                </li>
+                <li>
+                  Global cultural influence through technology, cuisine, and
+                  entertainment
+                </li>
+                <li>
+                  Essential knowledge for international business and cultural
+                  exchange
+                </li>
+              </ul>
+            </div>
+            <div class="col-img">
+              <img
+                src="https://pplx-res.cloudinary.com/image/upload/v1771136624/pplx_search_images/483fdb27966ebac069a2a1b37377565d3d079f00.jpg"
+                alt="Traditional Japanese tea ceremony"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 3 — HIGH-CONTEXT COMMUNICATION
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 3-a  What is High-Context? -->
+          <section>
+            <h2>High-Context Communication Culture</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>What is High-Context Communication?</h3>
+                <ul>
+                  <li>
+                    Meaning derived from <strong>context</strong>, not just
+                    words
+                  </li>
+                  <li>
+                    Reliance on nonverbal cues, silence, and shared
+                    understanding
+                  </li>
+                  <li>"Reading the air" (<em>kuuki wo yomu</em>)</li>
+                </ul>
+              </div>
+              <div class="col-img wide">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169768/pplx_search_images/3e8e6a77dcd1230fa28868298aef8992df87e690.jpg"
+                  alt="High-context vs low-context communication comparison"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 3-b  Honne vs Tatemae -->
+          <section>
+            <h2>Honne vs. Tatemae</h2>
+            <div class="row">
+              <div class="col-text">
+                <ul>
+                  <li><em>Honne</em> = true feelings (private)</li>
+                  <li><em>Tatemae</em> = public face (social harmony)</li>
+                </ul>
+                <div class="practice-box">
+                  <strong>📌 In practice:</strong>&ensp;"It's difficult" often
+                  means <strong>"no"</strong>
+                </div>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169759/pplx_search_images/1de78f56e5024a64388081acc8edf096b9dbed67.jpg"
+                  alt="Japanese businessmen bowing formally"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 4 — WA (HARMONY) & HIERARCHY
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 4-a  Wa + Collectivism -->
+          <section
+            data-background-image="https://pplx-res.cloudinary.com/image/upload/v1771169768/pplx_search_images/6905cc31efb3e49b1c5fdf3b593bd6bdac1c61d7.jpg"
+            data-background-opacity="0.15"
+          >
+            <div class="kanji-watermark" aria-hidden="true">和</div>
+            <h2>
+              Cultural Values: <span class="kanji">和</span> Wa &amp; Hierarchy
+            </h2>
+            <div style="text-align: left; max-width: 88%; margin: 0 auto">
+              <h3><span class="kanji">和</span> Wa – Harmony Above All</h3>
+              <ul>
+                <li>Group consensus prioritized over individual opinion</li>
+                <li>Avoiding confrontation and preserving relationships</li>
+                <li>Indirect refusal to maintain peace</li>
+              </ul>
+              <hr class="divider" />
+              <h3>Collectivism: The Group Identity</h3>
+              <ul>
+                <li><em>"The nail that sticks out gets hammered down"</em></li>
+                <li>Shared responsibility and success</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 4-b  Hierarchy -->
+          <section>
+            <h2>Respect for Hierarchy</h2>
+            <div class="row">
+              <div class="col-text">
+                <ul>
+                  <li>Age and position determine communication style</li>
+                  <li>
+                    Honorific language (<em>keigo</em>) reflects social status
+                  </li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169768/pplx_search_images/a71ca6208e2ef6d9e4d9fc62b52bcf6ec533ef48.jpg"
+                  alt="Person in martial arts gi – discipline and hierarchy"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 5 — NEMAWASHI & CONSENSUS
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 5-a  Nemawashi -->
+          <section>
+            <h2>
+              Decision-Making: <span class="kanji">根回し</span> &amp; Consensus
+            </h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>
+                  <em>Nemawashi</em> (<span class="kanji">根回し</span>) –
+                  "Laying the Groundwork"
+                </h3>
+                <ul>
+                  <li>Informal pre-meeting consultations</li>
+                  <li>Building consensus before formal decisions</li>
+                  <li>Everyone's input considered privately</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169759/pplx_search_images/1de78f56e5024a64388081acc8edf096b9dbed67.jpg"
+                  alt="Japanese businessmen bowing in formal meeting"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 5-b  Patience + Contrast -->
+          <section>
+            <h2>Patience Over Speed</h2>
+            <div class="row">
+              <div class="col-text">
+                <ul>
+                  <li>Decisions take time but implementation is swift</li>
+                  <li>Shared ownership reduces resistance</li>
+                </ul>
+                <div class="contrast-box">
+                  <strong>⚖️ Contrast:</strong> Western direct approach vs.
+                  Japanese consensus-building
+                </div>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169768/pplx_search_images/6905cc31efb3e49b1c5fdf3b593bd6bdac1c61d7.jpg"
+                  alt="Group of Japanese businessmen walking together"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 6 — TRADITIONAL CULTURE
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 6-a  Tea Ceremony + Kimono -->
+          <section>
+            <h2>Traditional Culture: The Foundation</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Tea Ceremony (<em>sadō</em>)</h3>
+                <ul>
+                  <li>Ritual, mindfulness, and respect in every movement</li>
+                  <li>Host-guest relationship mirrors social hierarchy</li>
+                </ul>
+                <h3>Kimono Culture</h3>
+                <ul>
+                  <li>Appropriate dress for appropriate occasions</li>
+                  <li>Formality levels communicate respect</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771136624/pplx_search_images/2a1042584880c8336d670f6f931c7b9b1799e191.jpg"
+                  alt="Japanese tea ceremony close-up"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 6-b  Samurai + Kabuki -->
+          <section>
+            <h2>Traditional Culture: The Foundation</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Samurai &amp; Bushido Code</h3>
+                <ul>
+                  <li>Honor, loyalty, discipline, and self-control</li>
+                  <li>Historical foundation for modern work ethic</li>
+                </ul>
+                <h3>Kabuki Theater</h3>
+                <ul>
+                  <li>Stylized communication and emotional expression</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169783/pplx_search_images/817eedbf2b9cf0ead3abaa13f7e8e7129db70db8.jpg"
+                  alt="Collection of traditional Kabuki masks"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 7 — TRADITIONS & CELEBRATIONS
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 7-a  Hanami -->
+          <section
+            data-background-image="https://pplx-res.cloudinary.com/image/upload/v1771169759/pplx_search_images/2d560cee8cd21f8bdd0363a2d5c5b1f30b792db4.jpg"
+            data-background-opacity="0.18"
+          >
+            <h2>Traditions &amp; Celebrations: Community Bonds</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Hanami – Cherry Blossom Viewing</h3>
+                <ul>
+                  <li>
+                    Celebrates <em>mono no aware</em> (transience of life)
+                  </li>
+                  <li>Community picnics under blossoms</li>
+                  <li>Shared aesthetic appreciation</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169759/pplx_search_images/dd5a636aa597d26d2dab9543511fb6da749ead9d.jpg"
+                  alt="Cherry blossom tunnel with glowing lanterns"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 7-b  Matsuri + New Year -->
+          <section>
+            <h2>Traditions &amp; Celebrations: Community Bonds</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Matsuri – Local Festivals</h3>
+                <ul>
+                  <li>Entire community participates</li>
+                  <li>Strengthens neighborhood bonds (<em>chōnaikai</em>)</li>
+                  <li>Portable shrines (<em>mikoshi</em>) carried together</li>
+                </ul>
+                <hr class="divider" />
+                <h3>New Year Traditions</h3>
+                <ul>
+                  <li>
+                    Gift-giving (<em>giri</em>) maintains social obligations
+                  </li>
+                  <li>Family gatherings and shrine visits</li>
+                  <li>Fresh start and renewal</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169783/pplx_search_images/c82ab128e0cab9191ec4a249628353fb87d52c80.jpg"
+                  alt="Fireworks over a Japanese festival float"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 8 — MODERN JAPAN
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 8-a  Tokyo + Shinkansen -->
+          <section>
+            <h2>Modern Japan: Technology Meets Tradition</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Tokyo: World's Most Advanced City</h3>
+                <ul>
+                  <li>Technology everywhere, yet tea houses remain</li>
+                  <li>
+                    Punctuality and precision (trains accurate to
+                    <strong>18&nbsp;seconds</strong>)
+                  </li>
+                </ul>
+                <h3>Shinkansen – Bullet Trains</h3>
+                <ul>
+                  <li>
+                    Engineering excellence + impeccable service
+                    (<em>omotenashi</em>)
+                  </li>
+                  <li>Symbol of post-war innovation</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169759/pplx_search_images/60ab21aa21c746500f3651b423546e9bc94a2eee.jpg"
+                  alt="Futuristic Tokyo tower lit in purple at night"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 8-b  Robotics + Akihabara -->
+          <section>
+            <h2>Modern Japan: Technology Meets Tradition</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Robotics &amp; AI Innovation</h3>
+                <ul>
+                  <li>Robot hotels, automated restaurants</li>
+                  <li>Technology serving human harmony</li>
+                </ul>
+                <h3>Akihabara – Anime &amp; Electronics District</h3>
+                <ul>
+                  <li>Global pop culture export hub</li>
+                  <li>Modern <em>otaku</em> subculture</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169783/pplx_search_images/449ed297d98d8b907b6b482a401da1ca215b0da6.jpg"
+                  alt="Akihabara neon district at night"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 9 — ANIME & MANGA
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 9-a  Industry + Values -->
+          <section>
+            <h2>Anime &amp; Manga: Global Cultural Diplomacy</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>
+                  <span class="red">$25&nbsp;Billion</span> Industry
+                  <span class="small cream">(2024 Record High)</span>
+                </h3>
+                <ul>
+                  <li>Overseas revenue exceeds domestic for the first time</li>
+                  <li>136 anime events across 51 countries</li>
+                </ul>
+                <h3>Cultural Values in Storytelling</h3>
+                <ul>
+                  <li>Themes: perseverance, friendship, honor, sacrifice</li>
+                  <li>Protagonist growth through community support</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1762851811/pplx_search_images/39d354a9826ea4c84c05daef55d70b9bb9bf0564.jpg"
+                  alt="Iconic Totoro scene from Studio Ghibli"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 9-b  Studios + Cosplay -->
+          <section>
+            <h2>Anime &amp; Manga: Global Cultural Diplomacy</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Famous Studios</h3>
+                <ul>
+                  <li>Studio Ghibli (Miyazaki): environmentalism + humanism</li>
+                  <li>Toho, MAPPA, Kyoto Animation</li>
+                </ul>
+                <h3>Cosplay &amp; Fan Communities</h3>
+                <ul>
+                  <li>Global participation in Japanese cultural expression</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169783/pplx_search_images/ac7581a490a1118ed64faae2ab1cae55d7c24065.jpg"
+                  alt="Akihabara anime billboards and Sega building"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 10 — JAPANESE CUISINE
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 10-a  Food as Art -->
+          <section>
+            <h2>Japanese Cuisine: Aesthetic Communication</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Food as Art &amp; Communication</h3>
+                <ul>
+                  <li>
+                    Presentation (<em>moriawase</em>) as important as taste
+                  </li>
+                  <li>
+                    Seasonal awareness (<em>shun</em>) honors nature's rhythms
+                  </li>
+                  <li>Each dish tells a story</li>
+                </ul>
+              </div>
+              <div class="col-img wide">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169768/pplx_search_images/3b529ea9c7a255d54dc97fa7cfd5fa4632d22630.jpg"
+                  alt="Assorted sushi with cherry blossoms"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 10-b  Dishes + Omotenashi -->
+          <section>
+            <h2>Japanese Cuisine: Aesthetic Communication</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Iconic Dishes</h3>
+                <ul>
+                  <li>Sushi: precision, simplicity, respect for ingredients</li>
+                  <li>Ramen: comfort food with regional variations</li>
+                  <li>Bento: balanced nutrition + visual harmony</li>
+                  <li>Mochi: traditional sweets for celebrations</li>
+                </ul>
+                <hr class="divider" />
+                <h3><em>Omotenashi</em> – Hospitality Spirit</h3>
+                <ul>
+                  <li>Anticipating needs before they're expressed</li>
+                  <li>Attention to every detail</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169768/pplx_search_images/2a4412b4f51ceb7bfc7f27e91113e3a700ceeb3b.jpg"
+                  alt="Panda bento box with variety of foods"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 11 — PRACTICAL TIPS
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 11-a  Communication Strategies -->
+          <section>
+            <h2>Practical Intercultural Communication Tips</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Communication Strategies</h3>
+                <ul>
+                  <li>
+                    Listen for what's <strong>NOT</strong> said — value silence
+                  </li>
+                  <li>Avoid direct confrontation; offer alternatives</li>
+                  <li>Be patient with decision-making processes</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169759/pplx_search_images/1de78f56e5024a64388081acc8edf096b9dbed67.jpg"
+                  alt="Two businessmen bowing in an office lobby"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 11-b  Etiquette + Relationships -->
+          <section>
+            <h2>Practical Intercultural Communication Tips</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Business Etiquette</h3>
+                <ul>
+                  <li>
+                    Business card exchange (<em>meishi kōkan</em>) – use both
+                    hands, study carefully
+                  </li>
+                  <li>Bowing depth indicates respect level</li>
+                  <li>Never refuse a gift directly</li>
+                </ul>
+                <hr class="divider" />
+                <h3>Building Relationships</h3>
+                <ul>
+                  <li>Invest time in <em>nomikai</em> (drinking gatherings)</li>
+                  <li>Understand <em>giri</em> (social obligations)</li>
+                  <li>
+                    Respect for <em>senpai-kōhai</em> (senior-junior)
+                    relationships
+                  </li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169768/pplx_search_images/6905cc31efb3e49b1c5fdf3b593bd6bdac1c61d7.jpg"
+                  alt="Professional group in business context"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 12 — HISTORICAL CONTEXT
+     ════════════════════════════════════════════════════════════ -->
+        <section>
+          <!-- 12-a  Samurai + Sakoku -->
+          <section>
+            <h2>Historical Context: Understanding Modern Japan</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Samurai Era (1185 – 1868)</h3>
+                <ul>
+                  <li>
+                    Bushido values → modern workplace discipline and loyalty
+                  </li>
+                  <li>Hierarchical structure persists today</li>
+                </ul>
+                <h3>Sakoku – Isolation Period (1639 – 1853)</h3>
+                <ul>
+                  <li>200+ years of limited foreign contact</li>
+                  <li>Cultural preservation and unique development</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169783/pplx_search_images/e5290e048ae62552d3f76a6b82eb33d8227b4ca4.jpg"
+                  alt="Meiji Restoration-era map with temple and cherry blossoms"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- 12-b  Meiji + Post-WWII -->
+          <section>
+            <h2>Historical Context: Understanding Modern Japan</h2>
+            <div class="row">
+              <div class="col-text">
+                <h3>Meiji Restoration (1868)</h3>
+                <ul>
+                  <li>
+                    Rapid modernization while maintaining cultural identity
+                  </li>
+                  <li>"Eastern spirit, Western technology"</li>
+                </ul>
+                <hr class="divider" />
+                <h3>Post-WWII Transformation</h3>
+                <ul>
+                  <li>Peace constitution, economic miracle</li>
+                  <li>Technology leader + cultural tradition preserver</li>
+                </ul>
+              </div>
+              <div class="col-img">
+                <img
+                  src="https://pplx-res.cloudinary.com/image/upload/v1771169768/pplx_search_images/07dd705ac91226489af7a011b2bc7914ec218d8c.jpg"
+                  alt="Shinkansen bullet train in green landscape"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 13 — KEY TAKEAWAYS
+     ════════════════════════════════════════════════════════════ -->
+        <section
+          data-background-image="https://pplx-res.cloudinary.com/image/upload/v1771136624/pplx_search_images/2a1042584880c8336d670f6f931c7b9b1799e191.jpg"
+          data-background-opacity="0.12"
+        >
+          <h2>Key Takeaways</h2>
+          <div style="text-align: left; max-width: 90%; margin: 0 auto">
+            <ul>
+              <li>
+                <strong>Context is Everything</strong> — look beyond words;
+                silence speaks volumes
+              </li>
+              <li>
+                <strong>Harmony Over Conflict</strong> — collective good
+                precedes individual desire; indirect communication preserves
+                relationships
+              </li>
+              <li>
+                <strong>Patience in Relationships</strong> — trust building
+                takes time (<em>nemawashi</em>); long-term relationships over
+                quick transactions
+              </li>
+              <li>
+                <strong>Respect for Process &amp; Tradition</strong> — rituals
+                have meaning; modern innovation is built on traditional values
+              </li>
+            </ul>
+            <div
+              class="practice-box"
+              style="text-align: center; margin-top: 0.5em"
+            >
+              <strong>Universal Lesson:</strong> Understanding high-context
+              cultures enriches <em>all</em> global communication
+            </div>
+          </div>
+        </section>
+
+        <!-- ════════════════════════════════════════════════════════════
+     SLIDE 14 — THANK YOU
+     ════════════════════════════════════════════════════════════ -->
+        <section
+          class="thankyou-slide"
+          data-background-image="https://pplx-res.cloudinary.com/image/upload/v1771136624/pplx_search_images/483fdb27966ebac069a2a1b37377565d3d079f00.jpg"
+          data-background-opacity="0.25"
+        >
+          <h1>ありがとうございました</h1>
+          <p><em>Arigatō gozaimashita</em> — Thank you very much</p>
+          <br />
+          <h3>Questions &amp; Discussion</h3>
+          <br />
+          <p class="small">
+            Maxmudov&nbsp;V &bull; Karimov&nbsp;O &bull; Shomirzayev&nbsp;U
+            &bull; Abdullayev&nbsp;M
+          </p>
+          <p class="small">
+            Elements of Intercultural Communications &bull; COM263
+          </p>
+        </section>
+      </div>
+      <!-- /.slides -->
+    </div>
+    <!-- /.reveal -->
+
+    <!-- Reveal.js core -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        transition: "slide",
+        width: 1100,
+        height: 700,
+        margin: 0.07,
+        center: true,
+        plugins: [RevealNotes],
+      });
+    </script>
+  </body>
+</html>
