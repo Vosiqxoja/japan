@@ -41,16 +41,16 @@
       :root {
         --r-background-color: #1a1a2e;
         --r-main-font: "Inter", "Noto Sans JP", Helvetica, sans-serif;
-        --r-main-font-size: 22px;
+        --r-main-font-size: 23px;
         --r-main-color: #fff;
         --r-heading-font: "Inter", "Noto Sans JP", Helvetica, sans-serif;
-        --r-heading-color: #c41e3a;
+        --r-heading-color: #f0b247;
         --r-heading-letter-spacing: 0.02em;
         --r-heading-text-transform: none;
         --r-heading-line-height: 1.2;
-        --r-link-color: #c41e3a;
-        --r-link-color-hover: #e8dcc4;
-        --r-selection-background-color: rgba(196, 30, 58, 0.45);
+        --r-link-color: #f0b247;
+        --r-link-color-hover: #ff5544;
+        --r-selection-background-color: rgba(240, 178, 71, 0.45);
         --r-selection-color: #fff;
       }
       .reveal {
@@ -63,18 +63,18 @@
       .reveal h3,
       .reveal h4 {
         font-family: var(--r-main-font);
-        color: #c41e3a;
-        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
-        margin-bottom: 0.3em;
+        color: #f0b247;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        margin-bottom: 0.5em;
       }
       .reveal h2 {
-        font-size: 1.5em;
-        border-bottom: 2px solid rgba(196, 30, 58, 0.4);
+        font-size: 2.2em;
+        border-bottom: 2px solid rgba(240, 178, 71, 0.4);
         padding-bottom: 0.18em;
         margin-bottom: 0.35em;
       }
       .reveal h3 {
-        font-size: 0.95em;
+        font-size: 1.3em;
         color: #e8dcc4;
         margin-top: 0.4em;
         margin-bottom: 0.15em;
@@ -101,7 +101,7 @@
         padding: 0;
       }
       .reveal li {
-        font-size: 0.85em;
+        font-size: 1em;
         line-height: 1.4;
         margin-bottom: 0.18em;
       }
@@ -146,8 +146,8 @@
 
       /* ═══════ SPECIAL BLOCKS ═══════ */
       .practice-box {
-        background: rgba(196, 30, 58, 0.14);
-        border-left: 4px solid #c41e3a;
+        background: rgba(240, 178, 71, 0.14);
+        border-left: 4px solid #f0b247;
         padding: 0.35em 0.8em;
         margin: 0.45em 0;
         border-radius: 0 6px 6px 0;
@@ -175,13 +175,13 @@
       /* ═══════ KANJI ═══════ */
       .kanji {
         font-family: "Noto Serif JP", serif;
-        color: #c41e3a;
+        color: #f0b247;
       }
       .kanji-watermark {
         font-family: "Noto Serif JP", serif;
         font-size: 9em;
         font-weight: 300;
-        color: rgba(196, 30, 58, 0.07);
+        color: rgba(240, 178, 71, 0.07);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -190,13 +190,16 @@
         z-index: 0;
         line-height: 1;
       }
+      #kanji-big {
+        font-size: 90px;
+      }
 
       /* ═══════ TITLE SLIDE ═══════ */
       .title-slide {
         text-align: center !important;
       }
       .title-slide h1 {
-        font-size: 2.8em;
+        font-size: 3.7em;
         text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7);
         margin-bottom: 0.1em;
         border-bottom: none;
@@ -207,7 +210,7 @@
       .title-slide h3 {
         color: #fff;
         font-weight: 400;
-        font-size: 1.05em;
+        font-size: 1.5em;
         margin-bottom: 0.7em;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
       }
@@ -218,13 +221,13 @@
       }
       .title-slide .meta p {
         color: #e8dcc4;
-        font-size: 0.52em;
+        font-size: 0.8em;
         margin: 0.18em 0;
         font-weight: 300;
       }
       .title-slide .meta p.course {
         font-weight: 500;
-        font-size: 0.58em;
+        font-size: 0.7em;
       }
 
       /* ═══════ THANK-YOU SLIDE ═══════ */
@@ -256,7 +259,7 @@
         color: #e8dcc4;
       }
       .red {
-        color: #c41e3a;
+        color: rgb(182, 157, 82);
       }
     </style>
   </head>
@@ -945,7 +948,7 @@
           data-background-image="https://pplx-res.cloudinary.com/image/upload/v1771136624/pplx_search_images/483fdb27966ebac069a2a1b37377565d3d079f00.jpg"
           data-background-opacity="0.25"
         >
-          <h1>ありがとうございました</h1>
+          <h1 id="kanji-big">ありがとうございました</h1>
           <p><em>Arigatō gozaimashita</em> — Thank you very much</p>
           <br />
           <h3>Questions &amp; Discussion</h3>
@@ -988,4 +991,3 @@
     </script>
   </body>
 </html>
-
